@@ -9,7 +9,7 @@ function try {
 	read guess
 }
 
-tdir=$(ls  | wc -l )
+tdir=$(ls -p | grep -v / | wc -l)
 
 
 while [[ $guess != $tdir ]]
